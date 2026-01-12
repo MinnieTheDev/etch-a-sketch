@@ -1,0 +1,18 @@
+.container {
+    border: 2px solid black;
+}
+.container .row {
+    display: flex;
+    border-bottom: 2px dotted black;
+}
+
+.container .row .column {
+    flex: 1;
+    border-right: 2px dotted black;
+    height: 100px;
+    width: 100px;
+}
+
+.container .row .column.last {
+    border-right: 0px;
+}
