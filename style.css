@@ -1,18 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#qBtn {
+    margin-bottom: 10px;
+}
+
 .container {
     border: 2px solid black;
+    width: 960px;
 }
 .container .row {
     display: flex;
-    border-bottom: 2px dotted black;
 }
 
 .container .row .column {
     flex: 1;
-    border-right: 2px dotted black;
-    height: 100px;
-    width: 100px;
+    width: 100%; 
+    aspect-ratio: 1/1;
 }
 
 .container .row .column.last {
     border-right: 0px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
