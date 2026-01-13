@@ -10,7 +10,7 @@ body {
 
 .container {
     border: 2px solid black;
-    width: 960px;
+    width: 70vw;
 }
 .container .row {
     display: flex;
