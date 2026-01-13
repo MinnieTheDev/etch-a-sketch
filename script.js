@@ -62,6 +62,12 @@ questionButton.addEventListener("click", () => {
     createGrid(userInput, currScheme);
 });
 
+// Reset canvas
+const resetButton = document.querySelector("#resetBtn");
+resetButton.addEventListener("click", () => {
+    createGrid(gridSize, currScheme);
+});
+
 // Handles colour scheme
 function randomRGB() {
     const r = Math.floor(Math.random() * 255);

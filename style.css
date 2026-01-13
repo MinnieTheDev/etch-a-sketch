@@ -4,13 +4,10 @@ body {
     align-items: center;
 }
 
-#qBtn {
-    margin-bottom: 10px;
-}
-
 .container {
     border: 2px solid black;
     width: 70vw;
+    margin-bottom: 20px;
 }
 .container .row {
     display: flex;
