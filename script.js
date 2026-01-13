@@ -46,7 +46,7 @@ createGrid();
 const questionButton = document.querySelector("#qBtn");
 
 function askSquaresnumber() {
-    return prompt("Number of squares wanted (max 100): ");
+    return prompt("Number of squares wanted (input a number between 1 and 100): ");
 }
 
 questionButton.addEventListener("click", () => {
@@ -54,6 +54,9 @@ questionButton.addEventListener("click", () => {
 
     if (userInput > 100) {
         userInput = 100;
+    }
+    else if (userInput == '' || userInput < 1) {
+        userInput = 16;
     }
 
     createGrid(userInput, currScheme);
