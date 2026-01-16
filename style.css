@@ -6,9 +6,11 @@ body {
 
 .container {
     border: 2px solid black;
-    width: 70vw;
+    width: min(70vw, 70vh);
+    height: min(70vw, 70vh);
     margin-bottom: 20px;
 }
+
 .container .row {
     display: flex;
 }
